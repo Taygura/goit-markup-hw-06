@@ -1,4 +1,4 @@
-/* global style */
+ /* global style */
 body {
   font-family: 'Roboto', sans-serif;
   background: #f5f5f5;
@@ -77,7 +77,9 @@ p {
   margin-right: 50px;
   padding: 32px 0;
   display: block;
-  transition: 250ms linear;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .active-link {
   color: var(--header-hover);
@@ -113,7 +115,9 @@ p {
   display: flex;
   align-items: center;
   padding: 32px 0;
-  transition: 250ms linear;
+  transition: color;   
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .contacts-link:first-child {
   margin-right: 50px;
@@ -161,7 +165,9 @@ p {
   border-radius: 4px;
   background: var(--header-hover);
   border: var(--bornon);
-  transition: 250ms linear;
+    transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .only-this-butoon:hover,
 .only-this-butoon:focus {
@@ -330,20 +336,19 @@ p {
   margin-right: 10px;
   margin-top: 16px;
   margin-bottom: 30px;
-  transition: 250ms linear;
 }
 .team .social-link:hover,
 .team .social-link:focus {
   background-color: #2196f3;
+  color:#ffffff
 }
 
 .icon-link {
-  fill: #afb1b8;
-  transition: 250ms linear;
+  fill: currentColor;
 }
 .team .social-link:hover .icon-link,
 .team .social-link:focus .icon-link {
-  fill: #ffffff;
+  color:#ffffff ;
 }
 .social-icons {
   justify-content: center;
@@ -355,8 +360,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms linear;
+  color: #afb1b8;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
+
 .team .icons:last-child {
   margin-right: 0;
 }
@@ -393,7 +402,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms linear;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .icon-logo {
   margin: 16px 32px;
@@ -431,7 +442,9 @@ p {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--next-color);
-  transition: 250ms linear;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .address-link {
   font-weight: 400;
@@ -439,7 +452,9 @@ p {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms linear;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .address .logo {
   display: block;
@@ -471,7 +486,9 @@ p {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  transition: 250ms linear;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .goin-link:last-child {
   margin-right: 0;
@@ -524,7 +541,9 @@ p {
 }
 .project .butoon {
   margin-right: 8px;
-  transition: 250ms linear;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .project-1st-button {
   width: 73px;
@@ -585,10 +604,9 @@ p {
 }
 .project-job .project-menu {
   flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-right: 25px;
+  margin-right: 30px;
   margin-bottom: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   position: relative;
   cursor: pointer;
   
@@ -607,7 +625,9 @@ p {
   top: 1px;
   transform: translateY(100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 250ms linear;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 .img-text {
   font-weight: 400;
@@ -746,7 +766,6 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;

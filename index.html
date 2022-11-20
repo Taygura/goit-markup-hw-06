@@ -374,6 +374,19 @@
                 </ul>
             </div>
           </address>
+          <div class="anjoy">
+            <h2 class="anjoy-header">Підпишіться на розсилку</h2>
+            <div class="input-butoon">
+              <label for="email"></label>
+            <input id="email" type="email" class="anjoy-input" placeholder="E-mail">
+            <button type="button" class="anjoy-butoon">
+              Підписатися <svg class="anjoy-icon" width="24" height="24">
+                <use href="./images/icons.svg#con-icon-send">
+                </use>
+                </svg>
+            </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -383,8 +396,24 @@
           <svg width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use></svg>
         </div>
-          <form name="form-buy">
-            <button type="submit">submit</button>
+        <h2 class="modal-hed">Залиште свої дані, ми вам передзвонимо</h2>
+          <form name="info-from-user" class="modal-form">
+            <label for="Ім'я" class="modal-label">Ім'я</label>
+            <input name="Ім'я" id="Ім'я" type="Name" class="modal-input">
+            <label for="Телефон" class="modal-label">Телефон</label>
+            <input name="Телефон" id="Телефон" type="tel" required class="modal-input">
+            <label for="Пошта" class="modal-label">Пошта</label>
+            <input name="Пошта" id="Пошта" type="email" class="modal-input">
+            <label for="Коментар" class="modal-label">Коментар</label>
+            <textarea name="Коментар" id="" cols="30" rows="4" placeholder="Введіть текст" class="modal-textarea"></textarea>
+            <!-- <label for="Коментар" class="modal-label">Коментар</label>
+            <input name="Коментар" id="Коментар" type="text" placeholder="Введіть текст" class="modal-input-four"> -->
+            <div class="agree">
+              <label for="checkbox"></label>
+              <input name="checkbox" id="checkbox" type="checkbox"value="ok"> <span class="first-text">Погоджуюся з розсилкою та приймаю</span> 
+              <a class="second-text" href="Договір">Умови договору</a> 
+            </div>
+            <button type="submit" class="modal-butoon"><span class="butoon-text">Відправити</span></button>
           </form>
       </div>
     </div>
